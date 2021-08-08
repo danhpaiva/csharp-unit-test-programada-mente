@@ -1,6 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyClasses;
 using System;
+using System.Configuration;
+using System.IO;
 
 namespace MyClassesTest
 {
@@ -8,15 +10,32 @@ namespace MyClassesTest
     public class FileProcessTest
     {
         private const string BAD_FILE_NAME = @"C:\BadFileName.bat";
+        private string _GoodFileName;
+
         [TestMethod]
         public void FileNameDoesExists()
         {
             FileProcess fileProcess = new FileProcess();
             bool fromCall;
 
-            fromCall = fileProcess.FileExists(@"");
+            SetGoodFileName();
+            File.AppendAllText(_GoodFileName, "Some Test");
+
+
+            fromCall = fileProcess.FileExists(_GoodFileName);
+            File.Delete(_GoodFileName);
 
             Assert.IsTrue(fromCall);
+        }
+
+        public void SetGoodFileName()
+        {
+            _GoodFileName = ConfigurationManager.AppSettings["GoodFileName"];
+            if (_GoodFileName.Contains("[AppPath]"))
+            {
+                _GoodFileName = _GoodFileName.Replace("[AppPath]",
+                    Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+            }
         }
 
         [TestMethod]
