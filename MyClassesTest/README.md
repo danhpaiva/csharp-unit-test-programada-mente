@@ -33,3 +33,6 @@ try + tab + tab
 ~~~
 Add => New Item => Application Configuration File
 ~~~
+
+~~~
+Add => Reference => System.Configuration
