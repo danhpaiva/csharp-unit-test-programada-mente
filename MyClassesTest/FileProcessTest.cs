@@ -37,5 +37,24 @@ namespace MyClassesTest
 
             fileProcess.FileExists("");
         }
+
+        [TestMethod]
+        public void FileNameNullOrEmpty_ThrowsArgumentNullException_UsingTryCatch()
+        {
+            FileProcess fileProcess = new FileProcess();
+
+            try
+            {
+                fileProcess.FileExists("");
+            }
+            catch (ArgumentException)
+            {
+                //Isso foi um sucesso!
+                //The test was a Sucess!
+                return;
+            }
+
+            Assert.Fail("Fail expecteddd");
+        }
     }
 }
