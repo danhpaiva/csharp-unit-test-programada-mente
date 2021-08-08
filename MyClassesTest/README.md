@@ -13,7 +13,7 @@ Class Library NetFrameWork
 - The test was created as:
 
 ~~~
-Unit Testt Project
+Unit Test Project
 ~~~
 
 - We use some shortcuts:
