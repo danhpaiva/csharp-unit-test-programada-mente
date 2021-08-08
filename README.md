@@ -34,12 +34,11 @@ Learn new testing tools.
 
 The following tools were used in the construction of the project:
 
-- IDE - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-- VScode Extension - <a href="https://github.com/bmewburn/vscode-intelephense">PHP Intelephense (bmewburn.vscode-intelephense-client)</a>
+- IDE - <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a>
 
 <h2 id=author>:grin: Author</h2>
 
 Developed by <a href="https://www.linkedin.com/in/danhpaiva/" target="_blank">Daniel Paiva</a>
 
 <h2 id=licence>:lock: Licence</h2>
-<a href="https://github.com/danhpaiva/course_php8_joao_ribeiro/blob/main/LICENSE" target="_blank">MIT</a>
+<a href="https://github.com/danhpaiva/csharp-unit-test-programada-mente/blob/main/LICENSE" target="_blank">MIT</a>
