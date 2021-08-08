@@ -27,3 +27,9 @@ To declare the try catch:
 ~~~
 try + tab + tab
 ~~~
+
+- To add a configuration file:
+
+~~~
+Add => New Item => Application Configuration File
+~~~
