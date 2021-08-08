@@ -34,7 +34,8 @@ Learn new testing tools.
 
 The following tools were used in the construction of the project:
 
-- IDE - <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a>
+- IDE: <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio</a>
+- SDK: <a href="https://go.microsoft.com/fwlink/?linkid=2088631">Net FrameWork 4.8</a>
 
 <h2 id=author>:grin: Author</h2>
 
